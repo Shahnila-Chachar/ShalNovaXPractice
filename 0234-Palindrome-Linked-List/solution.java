@@ -27,15 +27,16 @@ class Solution {
         }
         slow = previous;
         while(slow != null){
-            if(current.val == slow.val){
-                return true;
-            }
             if(current.val != slow.val){
                 return false;
             }
-            slow = slow.next;
-            current = current.next;
+            if(current.val == slow.val){
+                slow = slow.next;
+                current = current.next;
+            }
+            
+            
         }
-        return false;
+        return true;
     }
 }
