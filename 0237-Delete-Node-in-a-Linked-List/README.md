@@ -63,7 +63,7 @@ Example 2:
 
 - **Language**: Java
 - **Runtime**: 0 ms
-- **Memory**: 42 MB
+- **Memory**: 41.5 MB
 
 ---
 
