@@ -15,12 +15,10 @@ class Solution {
         ListNode even = head.next;
         ListNode evenHead = even;
         while(current.next != null){
-            if(current == odd){
-                odd.next = even.next;
-            }
-            if(current == even){
-                even.next = odd.next;
-            }
+            odd.next = even.next;
+            even.next = odd.next;
+            odd=odd.next;
+            even = even.next;
             current = current.next;
         }
         return head;
